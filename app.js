@@ -10,6 +10,9 @@ let cardsFlipped = 0;
 
 newScore = document.querySelector(".bestScore");
 newScore.innerText = `Best score: ${localStorage.getItem("best-score")}`;
+if (localStorage.getItem("best-score") === null) {
+    newScore.innerText = `Best score: 0`;
+}
 score = document.querySelector(".score");
 score.innerText = `Current score: ${count}`;
 
