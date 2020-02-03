@@ -100,6 +100,7 @@ function finished() {
     }
     newScore = document.querySelector(".bestScore");
     newScore.innerText = `Best score: ${count}`;
+    cardsFlipped = 0;
 }
 const resetButton = document.querySelector('.btn');
 resetButton.addEventListener('click', function(){
